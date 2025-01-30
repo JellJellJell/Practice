@@ -1,0 +1,226 @@
+@import 'style.css';
+
+
+.main {
+    padding-top: 70px;
+    // .main__content
+    
+    &__more-events {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        // .main__more-events_events
+
+        &_events {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: start;
+        }
+    }
+
+    // .main__events
+
+    &__events {
+
+        // .main__events_event
+
+        &_event {
+            width: 100%;
+            background-color: rgba(53, 53, 53, 0.66);
+        }
+    }
+
+    // .main__event
+
+    &__event {
+
+        // .main__event_event-container
+
+        &_event-container {
+            width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            padding: 30px 0;
+
+            img{
+                width: 30%;
+                box-shadow: 6px 4px 50px black;
+            }
+        }
+    }
+
+    // .main__event-container
+
+    &__event-container {
+
+        // .main__event-container_right-text
+
+        &_right-text {
+            width: 70%;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+
+    // .main__right-text
+
+    &__right-text {
+
+        // .main__right-text_about-event
+
+        &_about-event {
+            display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: flex-start;
+        }
+    }
+
+    // .main__riders
+
+    &__riders {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+
+        &_rider-card {
+            width: 100%;
+            background-color: rgba(53, 53, 53, 0.66);
+        }
+        
+        h2{
+            width: 1400px;
+            margin: 0 auto;
+            font-size: 30px;
+            color: rgba(155, 155, 155, 1);
+        }
+    }
+
+    // .main__rider-card
+
+    &__rider-card {
+
+        // .main__rider-card_name-rider
+
+        // &_name-rider {
+
+        // }
+
+        &_text-container{
+            width: 1400px;
+            margin: 0 auto;
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 50px;
+        // .main__content_info-event
+
+        &_info-event {
+            display: flex;
+            gap: 20px;
+        }
+
+        
+
+        a{
+            color: rgba(155, 155, 155, 1);
+        }
+
+        a:hover{
+            color: rgb(218, 218, 218);
+        }
+    }
+
+    // .main__info-event
+
+    &__info-event {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        // .main__info-event_img
+
+        &_main-text{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: justify;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(155, 155, 155, 1);
+            align-items: flex-end;
+        }
+
+        &_img {
+            width: 30%;
+            box-shadow: 6px 4px 50px black;
+        }
+
+        // .main__info-event_text-info
+
+        &_text-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                color: rgba(155, 155, 155, 1);
+            }
+
+            &__buttons{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            button{
+                font-size: 20px;
+                background-color: rgba(103, 103, 103, 1);
+                color: rgba(185, 185, 185, 1);
+                border: 1px solid rgba(185, 185, 185, 1);
+                width: 300px;
+                padding: 5px;
+                transition: 0.5s;
+            }
+
+            button:hover{
+                transition: 0.5s;
+                cursor: pointer;
+                background-color: rgba(185, 185, 185, 1);
+                color: rgba(103, 103, 103, 1);
+                border: 1px solid rgba(103, 103, 103, 1);
+            }
+        }
+    }
+
+    // .main__text-info
+
+    &__text-info {
+
+        &_text{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        // .main__text-info_time
+
+        &_time {
+            display: flex;
+            gap: 15px;
+        }
+    }
+}
+
+

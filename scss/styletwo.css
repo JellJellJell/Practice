@@ -1,0 +1,141 @@
+@import 'style.css';
+.main {
+  padding-top: 70px;
+}
+.main__more-events {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.main__more-events_events {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: start;
+}
+.main__events_event {
+  width: 100%;
+  background-color: rgba(53, 53, 53, 0.66);
+}
+.main__event_event-container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding: 30px 0;
+}
+.main__event_event-container img {
+  width: 30%;
+  box-shadow: 6px 4px 50px black;
+}
+.main__event-container_right-text {
+  width: 70%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.main__right-text_about-event {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: flex-start;
+}
+.main__riders {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.main__riders_rider-card {
+  width: 100%;
+  background-color: rgba(53, 53, 53, 0.66);
+}
+.main__riders h2 {
+  width: 1400px;
+  margin: 0 auto;
+  font-size: 30px;
+  color: rgb(155, 155, 155);
+}
+.main__rider-card_text-container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  gap: 50px;
+}
+.main__content_info-event {
+  display: flex;
+  gap: 20px;
+}
+.main__content a {
+  color: rgb(155, 155, 155);
+}
+.main__content a:hover {
+  color: rgb(218, 218, 218);
+}
+.main__info-event {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main__info-event_main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: justify;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgb(155, 155, 155);
+  align-items: flex-end;
+}
+.main__info-event_img {
+  width: 30%;
+  box-shadow: 6px 4px 50px black;
+}
+.main__info-event_text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main__info-event_text-info h2 {
+  color: rgb(155, 155, 155);
+}
+.main__info-event_text-info__buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main__info-event_text-info button {
+  font-size: 20px;
+  background-color: rgb(103, 103, 103);
+  color: rgb(185, 185, 185);
+  border: 1px solid rgb(185, 185, 185);
+  width: 300px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.main__info-event_text-info button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgb(185, 185, 185);
+  color: rgb(103, 103, 103);
+  border: 1px solid rgb(103, 103, 103);
+}
+.main__text-info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main__text-info_time {
+  display: flex;
+  gap: 15px;
+}/*# sourceMappingURL=styletwo.css.map */
