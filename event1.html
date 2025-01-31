@@ -40,15 +40,16 @@
                             <input type="text" maxlength="15" required placeholder="Иван" class="input-check">
                         </div>
                         <div class="input-style">
-                            <lebel>Номер телефона*</lebel>
-                            <input type="tel" required pattern="\+\d-\d{3}-\d{3}-\d{2}-\d{2}" placeholder="+0-000-000-00-00" class="input-check1">
+                            <lebel>Номер телефона</lebel>
+                            <input type="tel" required pattern="\+\d-\d{3}-\d{3}-\d{2}-\d{2}" placeholder="+0-000-000-00-00" maxlength="11">
                         </div>
                         <div class="input-style">
-                            <lebel>Ваш автомобиль (Марка, Модель)</lebel>
-                            <input name="" id="" maxlength="20" placeholder="пример: BMW E30">
+                            <lebel>Ваш автомобиль (Марка, Модель)*</lebel>
+                            <input name="" id="" maxlength="20" placeholder="пример: BMW E30" class="input-check1">
                         </div>           
                         <p class="hidden" id="error-text">Заполните необходимые поля!</p>
-                        <button type="reset" class="button-style" id="but-letter">Отправить</button>
+                        <p class="name-text">Ваш номер участника: 1</p>
+                        <button type="reset" class="button-style" id="but-add-rider">Отправить</button>
                     </form>
             </div> 
         </div>
@@ -82,35 +83,8 @@
                 </div>
             </div>
         </div>
-        <div class="main__riders" data-aos="fade-up">
+        <div class="main__riders" data-aos="fade-up" id="all-riders">
             <h2>Участники</h2>
-            <div class="main__riders_rider-card" data-aos="fade-up">
-                <div class="main__rider-card_text-container">
-                    <div class="main__rider-card_name-rider">
-                        <p>1</p>
-                        <p>Иван</p>
-                    </div>
-                    <p>Авто: BMW E30</p>
-                </div>
-            </div>
-            <div class="main__riders_rider-card" data-aos="fade-up">
-                <div class="main__rider-card_text-container">
-                    <div class="main__rider-card_name-rider">
-                        <p>2</p>
-                        <p>Алексей</p>
-                    </div>
-                    <p>Авто: Nissan Skyline r34</p>
-                </div>
-            </div>
-            <div class="main__riders_rider-card" data-aos="fade-up">
-                <div class="main__rider-card_text-container">
-                    <div class="main__rider-card_name-rider">
-                        <p>3</p>
-                        <p>Евгений</p>
-                    </div>
-                    <p>Авто: Nissan Silvia S13</p>
-                </div>
-            </div>
         </div>
             <div class="main__more-events" data-aos="fade-up">
                 <h2>ДРУГИЕ СОБЫТИЯ</h2>
@@ -206,6 +180,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/events.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
