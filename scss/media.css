@@ -1,0 +1,111 @@
+@media (max-width: 1024px){
+    .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2{
+        width: 956px;
+    }
+
+    .main__riders h2{
+        margin: 0 auto;
+    }
+
+    .header__menu{
+        width: 500px;
+        font-size: 15px;
+    }
+
+    .header__logo_link{
+        font-size: 30px;
+    }
+
+    .about-text p, .main__right-text_about-event p{
+        font-size: 15px;
+    }
+
+    .about-text, .main__right-text_about-event{
+        gap: 40px;
+    }
+
+    .text-event h3, .main__right-text_about-event h3{
+        font-size: 20px;
+    }
+
+    .text-event p, .main__right-text_about-event p{
+        font-size: 15px;
+    }
+
+    .button-style {
+        font-size: 13px;
+    }
+
+    .container2 button, .main__event-container_right-text button{
+        width: 160px;
+        height: 30px;
+    }
+
+    .letter-form{
+        width: 80%;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px){
+    .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2{
+        width: 380px;
+    }
+
+    .s-row{
+        flex-direction: column;
+    }
+
+    .s-row img{
+        width: 100%;
+    }
+
+    .main__riders h2{
+        margin: 0 auto;
+    }
+
+    .header__menu{
+        width: 250px;
+        font-size: 8px;
+    }
+
+    .header__logo_link{
+        font-size: 15px;
+    }
+
+    .about-text p, .main__right-text_about-event p{
+        font-size: 10px;
+    }
+
+    .about-text, .main__right-text_about-event{
+        gap: 20px;
+    }
+
+    .text-event h3, .main__right-text_about-event h3{
+        font-size: 15px;
+    }
+
+    .text-event p, .main__right-text_about-event p{
+        font-size: 10px;
+    }
+
+    .button-style {
+        font-size: 11px;
+    }
+
+    .container2 button, .main__event-container_right-text button{
+        width: 160px;
+        height: 30px;
+    }
+
+    .letter-form{
+        width: 90%;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+}

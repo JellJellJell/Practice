@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -28,6 +29,7 @@
                             <li class="header__menu_item"><a href="#letter" class="header__menu_link">ОБРАТНАЯ СВЯЗЬ</a></li>
                         </ul>
                     </div>
+                    <button class="hidden" id="admin-button">Войти</button>
                 </div>
             </div>
         </header>
@@ -49,21 +51,37 @@
                 <img src="img/about2.svg" class="img-about">
             </div>
         </section>
+        
         <section class="section-standart" data-aos="fade-up" id="events">
             <div class="container2">
                 <h2>ВСЕ СОБЫТИЯ</h2>
                 <div class="events-block">
+                    <!-- <div class="main__events_event" data-aos="fade-up">
+                        <div class="main__event_event-container">
+                            <img src="img/event2.svg" alt="">
+                            <div class="main__event-container_right-text">
+                                <div class="main__right-text_about-event">
+                                    <h3>НОЧНОЙ ЗАЕЗД В МОСКВЕ</h3>
+                                    <p>Привет, любители скорости! Спешим сообщить, что 30.06.2024 в 02:30 по МСК состоится нелегальный заезд. Старт у Moscow sity. Любой может принять участие в гонке, но или быть наблюдателем. Минимальная ставка для участия - 10 000 рублей.</p>
+                                </div>                      
+                                <a href="event2.html"><button class="button-style">Подробнее</button></a>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="event" data-aos="fade-up">
-                        <img src="img/event1.svg" alt="">
-                        <div class="right-event">
-                            <div class="text-event">
-                                <h3>НОЧНОЙ ЗАЕЗД В КРАСНОДАРЕ</h3>
-                                <p>Привет, любители скорости! Спешим сообщить, что 23.07.2024 в 02:30 по МСК состоится нелегальный заезд. Старт у главного входа парка Галицкого. Любой может принять участие в гонке, но или быть наблюдателем. Минимальная ставка для участия - 5 000 рублей.</p>
-                            </div>                      
-                            <a href="event1.html"><button class="button-style">Подробнее</button></a>
+                        <div class="container-event">
+                            <img src="img/event1.svg" alt="">
+                            <div class="right-event">
+                                <div class="text-event">
+                                    <h3>НОЧНОЙ ЗАЕЗД В КРАСНОДАРЕ</h3>
+                                    <p>Привет, любители скорости! Спешим сообщить, что 23.07.2024 в 02:30 по МСК состоится нелегальный заезд. Старт у главного входа парка Галицкого. Любой может принять участие в гонке, но или быть наблюдателем. Минимальная ставка для участия - 5 000 рублей.</p>
+                                </div>                      
+                                <a href="event1.html"><button class="button-style">Подробнее</button></a>
+                            </div>
                         </div>
                     </div>
                     <div class="event" data-aos="fade-up">
+                        <div class="container-event">
                         <img src="img/event2.svg" alt="">
                         <div class="right-event">
                             <div class="text-event">
@@ -72,8 +90,10 @@
                             </div>                      
                             <a href="event2.html"><button class="button-style">Подробнее</button></a>
                         </div>
+                        </div>
                     </div>
                     <div class="event" data-aos="fade-up">
+                        <div class="container-event">
                         <img src="img/event3.svg" alt="">
                         <div class="right-event">
                             <div class="text-event">
@@ -82,8 +102,10 @@
                             </div>                      
                             <a href="event3.html"><button class="button-style">Подробнее</button></a>
                         </div>
+                        </div>
                     </div>
                     <div class="event" data-aos="fade-up">
+                        <div class="container-event">
                         <img src="img/event3.svg" alt="">
                         <div class="right-event">
                             <div class="text-event">
@@ -92,8 +114,10 @@
                             </div>                      
                             <a href="event1.html"><button class="button-style">Подробнее</button></a>
                         </div>
+                        </div>
                     </div>
                     <div class="event" data-aos="fade-up">
+                        <div class="container-event">
                         <img src="img/event3.svg" alt="">
                         <div class="right-event">
                             <div class="text-event">
@@ -102,8 +126,10 @@
                             </div>                      
                             <a href="event1.html"><button class="button-style">Подробнее</button></a>
                         </div>
+                        </div>
                     </div>
                     <div class="event" data-aos="fade-up">
+                        <div class="container-event">
                         <img src="img/event3.svg" alt="">
                         <div class="right-event">
                             <div class="text-event">
@@ -112,11 +138,13 @@
                             </div>                      
                             <a href="event1.html"><button class="button-style">Подробнее</button></a>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <button id="more" class="button-style">Показать ещё</button>
             </div>   
         </section>
+        <div class="container">
         <section class="section-standart" data-aos="fade-up" id="letter">
             <div class="container3">
                 <h2>ОБРАТНАЯ СВЯЗЬ</h2>
@@ -148,6 +176,7 @@
                 <button class="button-style" id="but_in_letter">Закрыть</button>
             </div> 
         </div>
+    </div>
         <!-- <label for="">Выберите изображение<input type="file" accept="image/jpeg, image/png, image/jpg, image/gif" id="add-photo"></label> -->
     </main>
     <footer>
