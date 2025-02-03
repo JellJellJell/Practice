@@ -1,17 +1,32 @@
 @import 'style.css';
+html {
+  --refRes: 1900;
+  font-size: calc(100vw / var(--refRes) * 10);
+}
+@media (max-width: 1024px) {
+  html {
+    --refRes: 768;
+  }
+}
+@media (max-width: 530px) {
+  html {
+    --refRes: 390;
+  }
+}
+
 .main {
-  padding-top: 70px;
+  padding-top: 7rem;
 }
 .main__more-events {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3rem;
   text-align: center;
 }
 .main__more-events_events {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3rem;
   text-align: start;
 }
 .main__events_event {
@@ -19,15 +34,15 @@
   background-color: rgba(53, 53, 53, 0.66);
 }
 .main__event_event-container {
-  width: 1400px;
+  width: 140rem;
   margin: 0 auto;
   display: flex;
-  gap: 40px;
-  padding: 30px 0;
+  gap: 4rem;
+  padding: 3rem 0;
 }
 .main__event_event-container img {
   width: 30%;
-  box-shadow: 6px 4px 50px black;
+  box-shadow: 0.6rem 0.4rem 5rem black;
 }
 .main__event-container_right-text {
   width: 70%;
@@ -40,42 +55,42 @@
 .main__right-text_about-event {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 4rem;
   justify-content: flex-start;
 }
 .main__riders {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-bottom: 50px;
+  gap: 3rem;
+  margin-bottom: 5rem;
 }
 .main__riders_rider-card {
   width: 100%;
   background-color: rgba(53, 53, 53, 0.66);
 }
 .main__riders h2 {
-  width: 1400px;
+  width: 140rem;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 3rem;
   color: rgb(155, 155, 155);
 }
 .main__rider-card_text-container {
-  width: 1400px;
+  width: 140rem;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 6rem;
 }
 .main__content {
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
-  gap: 50px;
+  padding: 3rem 0;
+  gap: 5rem;
 }
 .main__content_info-event {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 .main__content a {
   color: rgb(155, 155, 155);
@@ -86,20 +101,20 @@
 .main__info-event {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.5rem;
 }
 .main__info-event_main-text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3rem;
   text-align: justify;
-  padding-bottom: 30px;
-  border-bottom: 2px solid rgb(155, 155, 155);
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem solid rgb(155, 155, 155);
   align-items: flex-end;
 }
 .main__info-event_img {
   width: 30%;
-  box-shadow: 6px 4px 50px black;
+  box-shadow: 0.6rem 0.4rem 5rem black;
 }
 .main__info-event_text-info {
   display: flex;
@@ -112,15 +127,15 @@
 .main__info-event_text-info__buttons {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1.5rem;
 }
 .main__info-event_text-info button {
-  font-size: 20px;
+  font-size: 2rem;
   background-color: rgb(103, 103, 103);
   color: rgb(185, 185, 185);
-  border: 1px solid rgb(185, 185, 185);
-  width: 300px;
-  padding: 5px;
+  border: 0.1rem solid rgb(185, 185, 185);
+  width: 30rem;
+  padding: 0.5rem;
   transition: 0.5s;
 }
 .main__info-event_text-info button:hover {
@@ -128,14 +143,14 @@
   cursor: pointer;
   background-color: rgb(185, 185, 185);
   color: rgb(103, 103, 103);
-  border: 1px solid rgb(103, 103, 103);
+  border: 0.1rem solid rgb(103, 103, 103);
 }
 .main__text-info_text {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.5rem;
 }
 .main__text-info_time {
   display: flex;
-  gap: 15px;
+  gap: 1.5rem;
 }/*# sourceMappingURL=styletwo.css.map */

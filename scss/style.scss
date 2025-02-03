@@ -1,4 +1,29 @@
+
+@use "sass:math";
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+html {
+  // --refRes можно менять в зависимости от макетов в Figma
+  // можно добавлять запросы и убирать не нужные
+  --refRes: 1900;
+  font-size: calc(100vw / var(--refRes) * 10);
+
+//   @media (min-width: 1921px) {
+//     font-size: 10px;
+//   }
+
+  @media (max-width: 1024px) {
+    --refRes: 768;
+  }
+
+  @media (max-width: 530px) {
+    --refRes: 390;
+  }
+}
+@function rem($pixels) {
+    @return math.div($pixels, 10) + rem;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -15,14 +40,13 @@ html{
 
 body {
     background: url(../../img/bg.png);
-    font-size: 20px;
-    width: 100%;
-    min-width: 100%;
+    font-size: rem(20);
+background-size: contain;
     font-family: 'Unbounded', sans-serif;
 }
 
 p {
-    font-size: 20px;
+    font-size: rem(20);
     color: rgba(155, 155, 155, 1);
 }
 
@@ -31,12 +55,12 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 40px;
+    width: rem(300);
+    height: rem(40);
     background-color: gray;
-    border-radius: 15px;
-    border: 1px solid black;
-    padding: 15px;
+    border-radius: rem(15);
+    border: rem(1) solid black;
+    padding: rem(15);
     transition: 0.5s;
 }
 
@@ -50,12 +74,12 @@ label {
 label:hover {
     transition: 0.5s;
     color: rgb(85, 85, 85);
-    width: 310px;
-    height: 42px;
+    width: rem(310);
+    height: rem(42);
     background-color: rgb(194, 194, 194);
 }
 .container{
-    max-width: 1400px;
+    max-width:rem(1400);
     margin: 0 auto;
 }
 /* header */
@@ -72,7 +96,7 @@ label:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: rem(10) 0;
 }
 
 .header__row_logo:hover{
@@ -80,18 +104,18 @@ label:hover {
 }
 
 .header__row button{
-    font-size: 20px;
+    font-size: rem(20);
     background-color: rgba(103, 103, 103, 1);
     color: rgba(185, 185, 185, 1);
-    border: 1px solid rgba(185, 185, 185, 1);
-    width: 100px;
-    padding: 5px;
+    border: rem(1) solid rgba(185, 185, 185, 1);
+    width: rem(100);
+    padding: rem(5);
     transition: 0.5s;
 }
 
 .header__menu{
     display: flex;
-    width: 800px;
+    width: rem(800);
     justify-content: space-between;
 
 }
@@ -105,8 +129,8 @@ label:hover {
 .header__logo_link{
     
     color: rgba(155, 155, 155, 1);
-    font-size: 40px;
-    text-shadow: rgb(24, 20, 24) 7px 7px 6px;
+    font-size: rem(40);
+    text-shadow: rgb(24, 20, 24) rem(7) rem(7) rem(6);
 }
 
 @keyframes logo-anim{
@@ -115,7 +139,7 @@ label:hover {
     }
 
     100%{
-        transform: translateY(-5px);
+        transform: translateY(rem(-5));
     }
 }
 
@@ -126,8 +150,8 @@ label:hover {
 
 .logo-color1 {
     color: rgba(155, 155, 155, 1);
-    font-size: 40px;
-    text-shadow: rgb(24, 20, 24) 7px 7px 6px;
+    font-size: rem(40);
+    text-shadow: rgb(24, 20, 24) rem(7) rem(7) rem(6);
 }
 
 .logo-color1 span {
@@ -140,27 +164,27 @@ label:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    padding: 30px;
+    margin-top: rem(50);
+    padding: rem(30);
 }
 
 .bottom-footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 15px 50px;
+    padding: rem(15) rem(50);
 }
 
 .left-footer{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: rem(30);
 }
 
 .left-footer div{
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: rem(15);
 }
 
 .footer-size{
@@ -175,7 +199,7 @@ label:hover {
 }
 
 .toheader{
-    width: 50px;
+    width: rem(50);
     opacity: 0.5;
     transition: 0.5s;
 }
@@ -186,20 +210,20 @@ label:hover {
 }
 
 .footer-links{
-    font-size: 15px;
+    font-size: rem(15);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 15px;
+    padding-bottom: rem(15);
     width: 100%;
-    border-bottom: 2px solid rgba(155, 155, 155, 1);
+    border-bottom: rem(2) solid rgba(155, 155, 155, 1);
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 700px;
+    width: rem(700);
 }
 
 nav a, .footer-links a{
@@ -213,30 +237,30 @@ nav a:hover, .footer-links a:hover{
 
 .section-standart{
     width: 100%;
-    padding-top: 70px;
+    padding-top: rem(70);
 }
 
 .container2{
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: rem(50);
+    margin: 0 auto;
 }
 
 .container3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: rem(50);
 }
 
 .container-event{
-    width: 1400px;
+    width: rem(1400);
     margin: 0 auto;
     display: flex;
-    gap: 40px;
-    padding: 30px 0;
+    gap: rem(40);
+    padding: rem(30) 0;
 }
 
 .events-block{
@@ -256,21 +280,21 @@ nav a:hover, .footer-links a:hover{
 }
 
 .button-style {
-    font-size: 20px;
+    font-size: rem(20);
     background-color: rgba(103, 103, 103, 1);
     color: rgba(185, 185, 185, 1);
-    border: 1px solid rgba(185, 185, 185, 1);
+    border: rem(1) solid rgba(185, 185, 185, 1);
 }
 
 .container2 button, .main__event-container_right-text button, .modal-letter button{
     transition: 0.5s;
-    width: 250px;
-    height: 40px;
+    width: rem(250);
+    height: rem(40);
 }
 
 .right-event button:hover, .main__event-container_right-text button:hover{
-    width: 253px;
-    height: 43px;
+    width: rem(253);
+    height: rem(43);
 }
 
 .container2 button:hover, .form-style button:hover, .main__event-container_right-text button:hover, .header__row button:hover, .modal-letter button:hover{
@@ -278,24 +302,24 @@ nav a:hover, .footer-links a:hover{
     cursor: pointer;
     background-color: rgba(185, 185, 185, 1);
     color: rgba(103, 103, 103, 1);
-    border: 1px solid rgba(103, 103, 103, 1);
+    border: rem(1) solid rgba(103, 103, 103, 1);
 }
 
 .text-event{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: rem(40);
     justify-content: flex-start;
 }
 
 .text-event h3, .main__right-text_about-event h3{
-    font-size: 30px;
+    font-size: rem(30);
     color: rgba(155, 155, 155, 1);
 }
 
 .event{
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: rem(50);
     background-color: rgba(53, 53, 53, 0.66);
 }
 
@@ -309,7 +333,7 @@ nav a:hover, .footer-links a:hover{
 
 .event img{
     width: 30%;
-    box-shadow: 6px 4px 50px black;
+    box-shadow: rem(6) rem(4) rem(50) black;
 }
 
 .letter-form{
@@ -319,54 +343,54 @@ nav a:hover, .footer-links a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: rem(50);
     width: 60%;
     margin: 0 auto;
 }
 
 input, textarea{
-    padding: 15px;
+    padding: rem(15);
     color: rgba(106, 106, 106, 1);
     font-weight: 700;
-    border: 2px solid rgba(106, 106, 106, 1);
+    border: rem(2) solid rgba(106, 106, 106, 1);
 }
 
 textarea{
     resize: none;
-    min-height: 200px;
+    min-height: rem(200);
 }
 
 .letter-form h3{
-    font-size: 30px;
+    font-size: rem(30);
     text-align: center;
 }
 
 .form-style{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: rem(15);
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: rem(40);
+    margin-bottom: rem(20);
     justify-content: space-around;
 }
 
 .form-style button, .form-style input, .form-style textarea{
     width: 100%;
-    height: 40px;
+    height: rem(40);
 }
 
 .input-style{
     display: flex;
     flex-direction: column;
-    width: 300px;
-    gap: 15px;
+    width: rem(300);
+    gap: rem(15);
     align-items: flex-start;
 }
 
 .error-text{
-    width: 300px;
-    font-size: 15px;
+    width: rem(300);
+    font-size: rem(15);
     text-align: center;
     color: rgb(153, 0, 0);
 }
@@ -374,18 +398,18 @@ textarea{
 .about-text{
     width: 50%;
     display: flex;
-    gap: 50px;
+    gap: rem(50);
     flex-direction: column;
-    padding: 50px;
+    padding: rem(50);
 }
 
 .about-text h2, .container2 h2, .container3 h2, .main__more-events h2{
-    font-size: 50px;
+    font-size: rem(50);
     color: rgba(155, 155, 155, 1);
 }
 
 .about-text p{
-    font-size: 30px;
+    font-size: rem(30);
 }
 
 .s-row{
@@ -421,9 +445,9 @@ textarea{
     display: flex;
     text-align: center;
     color: rgba(106, 106, 106, 1);
-    padding: 40px 15px 20px;
+    padding: rem(40) rem(15) rem(20);
     flex-direction: column;
-    gap: 30px;
+    gap: rem(30);
     align-items: center;
     justify-content: center;
     background-color: rgba(53, 53, 53, 1);
@@ -434,14 +458,14 @@ textarea{
     flex-direction: column;
     align-items: center;
     background-color: rgba(53, 53, 53, 1);
-    padding: 0 50px;
+    padding: 0 rem(50);
     position: absolute;
     color: rgba(142, 142, 142, 1);
 
     #close-but{
         position: relative;
-        top: 28px;
-        right: -170px;
+        top: rem(28);
+        right: rem(-170);
         opacity: 0.5;
     }
 
@@ -449,3 +473,5 @@ textarea{
         opacity: 1;
     }
 }
+
+@import "_mediaa.scss";

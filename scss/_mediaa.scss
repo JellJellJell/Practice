@@ -1,0 +1,229 @@
+@media (max-width: 1024px){
+    .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2{
+        width: rem(956);
+    }
+
+    .main__riders h2{
+        margin: 0 auto;
+    }
+
+    .header__menu{
+        width: rem(500);
+        font-size: rem(15);
+    }
+
+    .header__logo_link{
+        font-size: rem(30);
+    }
+
+    .about-text p, .main__right-text_about-event p{
+        font-size: rem(15);
+    }
+
+    .about-text, .main__right-text_about-event{
+        gap: rem(40);
+    }
+
+    .text-event h3, .main__right-text_about-event h3{
+        font-size: rem(20);
+    }
+
+    .text-event p, .main__right-text_about-event p{
+        font-size: rem(15);
+    }
+
+    .button-style {
+        font-size: rem(13);
+    }
+
+    .container2 button, .main__event-container_right-text button{
+        width: rem(160);
+        height: rem(30);
+    }
+
+    .letter-form{
+        width: 80%;
+    }
+
+    footer p{
+        font-size: rem(15);
+    }
+}
+
+@media (max-width: 530px){
+    .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2{
+        width: rem(480);
+    }
+
+    .s-row{
+        flex-direction: column;
+    }
+
+    .s-row img{
+        width: 100%;
+    }
+
+    .s-row .about-text{
+        order: 1;
+    }
+
+    .s-row .img-about{
+        order: 0;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+
+    .event, .main__events_event{
+        width: rem(450);
+        margin: 0 auto;
+        margin-bottom: rem(50);
+    }
+
+    .container-event, .main__event_event-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container-event img, .right-event, .main__event_event-container img, .main__event-container_right-text{
+        width: 90%;
+    }
+
+    .right-event, .main__event-container_right-text{
+        align-items: center;
+        gap: rem(60);
+    }
+
+    .main__riders h2{
+        margin: 0 auto;
+    }
+
+    .header__menu{
+        width: rem(250);
+        font-size: rem(8);
+    }
+
+    .header__logo_link{
+        font-size: rem(15);
+    }
+
+    .about-text p, .main__right-text_about-event p{
+        font-size: rem(17);
+    }
+
+    .about-text, .main__right-text_about-event{
+        gap: rem(20);
+    }
+
+    .text-event h3, .main__right-text_about-event h3{
+        font-size: rem(20);
+    }
+
+    .text-event p, .main__right-text_about-event p{
+        font-size: rem(17);
+    }
+
+    .button-style {
+        font-size: rem(13);
+    }
+
+    .container2 button, .main__event-container_right-text button{
+        width: rem(160);
+        height: rem(30);
+    }
+
+    .container3{
+        text-align: center;
+    }
+
+    .letter-form{
+        width: rem(450);
+    }
+
+    .letter-form h3{
+        font-size: rem(20);
+    }
+
+    .letter-form button{
+        font-size: rem(20);
+    }
+
+    .bottom-footer, .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(30);
+        width: 100%;
+    }
+
+    .bottom-footer{
+        padding: rem(30) 0;
+    }
+
+    .right-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-footer p{
+        order: 0;
+    }
+
+    .right-footer a{
+        order: 1;
+    }
+
+    .center-footer{
+        display: flex;
+        gap: rem(15);
+        align-items: center;
+    }
+
+    .center-footer a{
+        order: 0;
+    }
+
+    .center-footer p{
+        order: 1;
+    }
+
+    .footer-size{
+        width: 100%;
+        display: flex;
+    }
+
+    footer p{
+        font-size: rem(15);
+    }
+
+    .modal-letter{
+        width: 60%;
+    }
+
+    .modal-letter button{
+        font-size: rem(15);
+    }
+
+    .main__content_info-event{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__info-event_img{
+        width: 100%;
+    }
+
+    .main__text-info_buttons{
+        margin-top: rem(30);
+        width: 100%;
+    }
+
+    .but-accept-event{
+        width: 100%;
+    }
+}

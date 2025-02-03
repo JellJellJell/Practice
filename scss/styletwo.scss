@@ -1,21 +1,44 @@
+@use "sass:math";
 @import 'style.css';
+
+html {
+    // --refRes можно менять в зависимости от макетов в Figma
+    // можно добавлять запросы и убирать не нужные
+    --refRes: 1900;
+    font-size: calc(100vw / var(--refRes) * 10);
+  
+  //   @media (min-width: 1921px) {
+  //     font-size: 10px;
+  //   }
+  
+    @media (max-width: 1024px) {
+      --refRes: 768;
+    }
+  
+    @media (max-width: 530px) {
+      --refRes: 390;
+    }
+  }
+  @function rem($pixels) {
+      @return math.div($pixels, 10) + rem;
+    }
 
 
 .main {
-    padding-top: 70px;
+    padding-top: rem(70);
     // .main__content
     
     &__more-events {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: rem(30);
         text-align: center;
         // .main__more-events_events
 
         &_events {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: rem(30);
             text-align: start;
         }
     }
@@ -39,15 +62,15 @@
         // .main__event_event-container
 
         &_event-container {
-            width: 1400px;
+            width: rem(1400);
             margin: 0 auto;
             display: flex;
-            gap: 40px;
-            padding: 30px 0;
+            gap: rem(40);
+            padding: rem(30) 0;
 
             img{
                 width: 30%;
-                box-shadow: 6px 4px 50px black;
+                box-shadow: rem(6) rem(4) rem(50) black;
             }
         }
     }
@@ -77,7 +100,7 @@
         &_about-event {
             display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: rem(40);
         justify-content: flex-start;
         }
     }
@@ -87,8 +110,8 @@
     &__riders {
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        margin-bottom: 50px;
+        gap: rem(30);
+        margin-bottom: rem(50);
 
         &_rider-card {
             width: 100%;
@@ -96,9 +119,9 @@
         }
         
         h2{
-            width: 1400px;
+            width: rem(1400);
             margin: 0 auto;
-            font-size: 30px;
+            font-size: rem(30);
             color: rgba(155, 155, 155, 1);
         }
     }
@@ -114,25 +137,25 @@
         // }
 
         &_text-container{
-            width: 1400px;
+            width: rem(1400);
             margin: 0 auto;
-            padding: 15px 0;
+            padding: rem(15) 0;
             display: flex;
             flex-direction: column;
-            gap: 60px;
+            gap: rem(60);
         }
     }
 
     &__content {
         display: flex;
         flex-direction: column;
-        padding: 30px 0;
-        gap: 50px;
+        padding: rem(30) 0;
+        gap: rem(50);
         // .main__content_info-event
 
         &_info-event {
             display: flex;
-            gap: 20px;
+            gap: rem(20);
         }
 
         
@@ -151,22 +174,22 @@
     &__info-event {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: rem(15);
         // .main__info-event_img
 
         &_main-text{
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: rem(30);
             text-align: justify;
-            padding-bottom: 30px;
-            border-bottom: 2px solid rgba(155, 155, 155, 1);
+            padding-bottom: rem(30);
+            border-bottom: rem(2) solid rgba(155, 155, 155, 1);
             align-items: flex-end;
         }
 
         &_img {
             width: 30%;
-            box-shadow: 6px 4px 50px black;
+            box-shadow: rem(6) rem(4) rem(50) black;
         }
 
         // .main__info-event_text-info
@@ -182,16 +205,16 @@
             &__buttons{
                 display: flex;
                 align-items: center;
-                gap: 15px;
+                gap: rem(15);
             }
 
             button{
-                font-size: 20px;
+                font-size: rem(20);
                 background-color: rgba(103, 103, 103, 1);
                 color: rgba(185, 185, 185, 1);
-                border: 1px solid rgba(185, 185, 185, 1);
-                width: 300px;
-                padding: 5px;
+                border: rem(1) solid rgba(185, 185, 185, 1);
+                width: rem(300);
+                padding: rem(5);
                 transition: 0.5s;
             }
 
@@ -200,7 +223,7 @@
                 cursor: pointer;
                 background-color: rgba(185, 185, 185, 1);
                 color: rgba(103, 103, 103, 1);
-                border: 1px solid rgba(103, 103, 103, 1);
+                border: rem(1) solid rgba(103, 103, 103, 1);
             }
         }
     }
@@ -212,13 +235,13 @@
         &_text{
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: rem(15);
         }
         // .main__text-info_time
 
         &_time {
             display: flex;
-            gap: 15px;
+            gap: rem(15);
         }
     }
 }
