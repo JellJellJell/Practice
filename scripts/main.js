@@ -41,16 +41,3 @@ but_in_modal_letter.addEventListener('click', ()=>{
 })
 
 // Конец Обратная связь
-
-//админ панель
-
-let admin_button = document.getElementById('admin-button')
-
-document.addEventListener('keydown',(event)=>{
-    if (event.code === 'KeyP' && admin_button.classList.contains('hidden')) {
-        admin_button.classList.remove('hidden')
-      }else{
-        admin_button.classList.add('hidden')
-      }
-})
-// конец админ панель

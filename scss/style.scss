@@ -39,9 +39,9 @@ html{
 }
 
 body {
-    background: url(../../img/bg.png);
+    background: url(../img/bg.png);
     font-size: rem(20);
-background-size: contain;
+    background-size: contain;
     font-family: 'Unbounded', sans-serif;
 }
 
@@ -50,19 +50,19 @@ p {
     color: rgba(155, 155, 155, 1);
 }
 
-label {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: rem(300);
-    height: rem(40);
-    background-color: gray;
-    border-radius: rem(15);
-    border: rem(1) solid black;
-    padding: rem(15);
-    transition: 0.5s;
-}
+// label {
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: rem(300);
+//     height: rem(40);
+//     background-color: gray;
+//     border-radius: rem(15);
+//     border: rem(1) solid black;
+//     padding: rem(15);
+//     transition: 0.5s;
+// }
 
 #add-photo {
     position: absolute;
@@ -71,13 +71,13 @@ label {
     height: 100%;
 }
 
-label:hover {
-    transition: 0.5s;
-    color: rgb(85, 85, 85);
-    width: rem(310);
-    height: rem(42);
-    background-color: rgb(194, 194, 194);
-}
+// label:hover {
+//     transition: 0.5s;
+//     color: rgb(85, 85, 85);
+//     width: rem(310);
+//     height: rem(42);
+//     background-color: rgb(194, 194, 194);
+// }
 .container{
     max-width:rem(1400);
     margin: 0 auto;
@@ -318,7 +318,6 @@ nav a:hover, .footer-links a:hover{
 }
 
 .event{
-    width: 100%;
     margin-bottom: rem(50);
     background-color: rgba(53, 53, 53, 0.66);
 }

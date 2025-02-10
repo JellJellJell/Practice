@@ -1,6 +1,7 @@
 // Принять участие
 
 let but_accept =  document.getElementById('but-accept-event')
+
 let but_add_rider = document.getElementById('but-add-rider')
 let all_riders = document.getElementById('all-riders')
 let error_text = document.getElementById('error-text')

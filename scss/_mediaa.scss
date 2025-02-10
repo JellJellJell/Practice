@@ -51,8 +51,8 @@
 }
 
 @media (max-width: 530px){
-    .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2{
-        width: rem(480);
+    .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2, .container2 h2{
+        width: rem(300);
     }
 
     .s-row{
@@ -76,7 +76,7 @@
     }
 
     .event, .main__events_event{
-        width: rem(450);
+        width: rem(300);
         margin: 0 auto;
         margin-bottom: rem(50);
     }
@@ -89,7 +89,7 @@
     }
 
     .container-event img, .right-event, .main__event_event-container img, .main__event-container_right-text{
-        width: 90%;
+        width: rem(250);
     }
 
     .right-event, .main__event-container_right-text{
@@ -102,8 +102,8 @@
     }
 
     .header__menu{
-        width: rem(250);
-        font-size: rem(8);
+        width: rem(200);
+        font-size: rem(7);
     }
 
     .header__logo_link{
@@ -135,12 +135,17 @@
         height: rem(30);
     }
 
-    .container3{
+    .container3, .container2{
         text-align: center;
     }
 
+    .input-style{
+        width: rem(250);
+    }
+
     .letter-form{
-        width: rem(450);
+        width: rem(300);
+        margin: 0;
     }
 
     .letter-form h3{
@@ -202,7 +207,7 @@
     }
 
     .modal-letter{
-        width: 60%;
+        width: 80%;
     }
 
     .modal-letter button{
@@ -214,14 +219,14 @@
         align-items: center;
     }
 
-    .main__info-event_img{
-        width: 100%;
-    }
+    // .main__info-event_img{
+    //     width: 100%;
+    // }
 
-    .main__text-info_buttons{
-        margin-top: rem(30);
-        width: 100%;
-    }
+    // .main__text-info_buttons{
+    //     margin-top: rem(30);
+    //     width: 100%;
+    // }
 
     .but-accept-event{
         width: 100%;

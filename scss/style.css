@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  background: url(../../img/bg.png);
+  background: url(../img/bg.png);
   font-size: 2rem;
   background-size: contain;
   font-family: "Unbounded", sans-serif;
@@ -40,33 +40,11 @@ p {
   color: rgb(155, 155, 155);
 }
 
-label {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30rem;
-  height: 4rem;
-  background-color: gray;
-  border-radius: 1.5rem;
-  border: 0.1rem solid black;
-  padding: 1.5rem;
-  transition: 0.5s;
-}
-
 #add-photo {
   position: absolute;
   opacity: 0;
   width: 100%;
   height: 100%;
-}
-
-label:hover {
-  transition: 0.5s;
-  color: rgb(85, 85, 85);
-  width: 31rem;
-  height: 4.2rem;
-  background-color: rgb(194, 194, 194);
 }
 
 .container {
@@ -309,7 +287,6 @@ nav a:hover, .footer-links a:hover {
 }
 
 .event {
-  width: 100%;
   margin-bottom: 5rem;
   background-color: rgba(53, 53, 53, 0.66);
 }
@@ -503,8 +480,8 @@ textarea {
   }
 }
 @media (max-width: 530px) {
-  .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2 {
-    width: 48rem;
+  .container, .main__event_event-container, .container-event, .main__rider-card_text-container, .main__riders h2, .container2 h2 {
+    width: 30rem;
   }
   .s-row {
     flex-direction: column;
@@ -522,7 +499,7 @@ textarea {
     width: 100%;
   }
   .event, .main__events_event {
-    width: 45rem;
+    width: 30rem;
     margin: 0 auto;
     margin-bottom: 5rem;
   }
@@ -533,7 +510,7 @@ textarea {
     justify-content: space-around;
   }
   .container-event img, .right-event, .main__event_event-container img, .main__event-container_right-text {
-    width: 90%;
+    width: 25rem;
   }
   .right-event, .main__event-container_right-text {
     align-items: center;
@@ -543,8 +520,8 @@ textarea {
     margin: 0 auto;
   }
   .header__menu {
-    width: 25rem;
-    font-size: 0.8rem;
+    width: 20rem;
+    font-size: 0.7rem;
   }
   .header__logo_link {
     font-size: 1.5rem;
@@ -568,11 +545,15 @@ textarea {
     width: 16rem;
     height: 3rem;
   }
-  .container3 {
+  .container3, .container2 {
     text-align: center;
   }
+  .input-style {
+    width: 25rem;
+  }
   .letter-form {
-    width: 45rem;
+    width: 30rem;
+    margin: 0;
   }
   .letter-form h3 {
     font-size: 2rem;
@@ -621,7 +602,7 @@ textarea {
     font-size: 1.5rem;
   }
   .modal-letter {
-    width: 60%;
+    width: 80%;
   }
   .modal-letter button {
     font-size: 1.5rem;
@@ -629,13 +610,6 @@ textarea {
   .main__content_info-event {
     flex-direction: column;
     align-items: center;
-  }
-  .main__info-event_img {
-    width: 100%;
-  }
-  .main__text-info_buttons {
-    margin-top: 3rem;
-    width: 100%;
   }
   .but-accept-event {
     width: 100%;

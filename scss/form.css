@@ -1,0 +1,55 @@
+@import 'style.css';
+.form-wrap {
+  background-color: rgba(53, 53, 53, 0.66);
+  width: 700px;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 100px;
+}
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(106, 106, 106);
+}
+
+.form-container h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.form-container p {
+  font-size: 11px;
+  text-align: start;
+}
+
+.form-container a {
+  color: rgb(106, 106, 106);
+}
+
+.form-container a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.button-style {
+  font-size: 20px;
+  transition: 0.5s;
+  background-color: rgb(103, 103, 103);
+  color: rgb(185, 185, 185);
+  border: 1px solid rgb(185, 185, 185);
+  padding: 5px;
+}
+
+.button-style:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgb(185, 185, 185);
+  color: rgb(103, 103, 103);
+  border: 1px solid rgb(103, 103, 103);
+}/*# sourceMappingURL=form.css.map */
