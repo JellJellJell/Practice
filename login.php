@@ -1,16 +1,15 @@
-<?php
-    session_start();        
+<?php     
+    include 'connect.php';
     $_SESSION['error']['autherror'] = '';
-    $conn = new mysqli('localhost','root','','cultcars');
     if($_POST){
-        $name = $_POST['name'];
+        $login = $_POST['login'];
         $pass = $_POST['pass'];
-        $users = $conn -> query("SELECT * FROM `users` WHERE `pass` = '$pass' AND `name` = '$name'");
+        $users = $conn -> query("SELECT * FROM `users` WHERE `pass` = '$pass' AND `login` = '$login'");
         if($users->num_rows>0){
             $user = $users -> fetch_assoc();
             $_SESSION['user'] = [
                 'id' => $user['id'],
-                'name' => $user['name'],
+                'login' => $user['login'],
                 'pass' => $user['pass'],
                 'role' => $user['role']
             ];
@@ -18,7 +17,7 @@
             if($_SESSION['user']['role'] == 1){
                 header('location:admin-panel.php');
             }else{
-                header('location:index.php');
+                header('location:profile.php');
             }
             
     
@@ -60,10 +59,10 @@
         <form method="POST" class="form-wrap">
             <div class="form-container">
                 <h1>Авторизация</h1>
-                <label>Имя</label>
-                <input type="text" name="name">              
-                <label>Пароль</label>
-                <input type="password" name="pass">
+                <label>Логин*</label>
+                <input type="text" name="login" required>              
+                <label>Пароль*</label>
+                <input type="password" name="pass" required>
                 <button type="submit" class="button-style">Войти</button>
                 <p class="error-text"><?if(!empty($_SESSION['error']['autherror'])){
                 echo $_SESSION['error']['autherror'];

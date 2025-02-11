@@ -135,10 +135,7 @@ include 'header.php';
             </div> 
         </div>
     </div>
-    <!-- <form action="" method="post" enctype="multipart/form-data"></form> -->
-        <!-- <label for="">Выберите изображение<input type="file" accept="image/jpeg, image/png, image/jpg, image/gif" id="add-photo"></label> -->
     </main>
-
     <?
     include 'footer.php';
     ?>

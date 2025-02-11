@@ -64,13 +64,6 @@ p {
 //     transition: 0.5s;
 // }
 
-#add-photo {
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-}
-
 // label:hover {
 //     transition: 0.5s;
 //     color: rgb(85, 85, 85);
@@ -103,14 +96,23 @@ p {
     animation: logo-anim 1s infinite ease alternate;
 }
 
-.header__row button{
+.header__row button, .header__row .admin-button{
     font-size: rem(20);
     background-color: rgba(103, 103, 103, 1);
     color: rgba(185, 185, 185, 1);
     border: rem(1) solid rgba(185, 185, 185, 1);
     width: rem(100);
     padding: rem(5);
+    text-align: center;
     transition: 0.5s;
+}
+
+.header__row .admin-button:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgba(185, 185, 185, 1);
+    color: rgba(103, 103, 103, 1);
+    border: 1px solid rgba(103, 103, 103, 1);
 }
 
 .header__menu{
@@ -471,6 +473,23 @@ textarea{
     #close-but:hover{
         opacity: 1;
     }
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login img{
+    width: 25px;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.login img:hover{
+    transition: 0.5s;
+    opacity: 1;
 }
 
 @import "_mediaa.scss";

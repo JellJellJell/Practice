@@ -53,4 +53,35 @@ li:hover {
 h1 {
   padding: 20px;
   border-bottom: 2px solid rgb(155, 155, 155);
+}
+
+#add-photo {
+  position: absolute;
+  opacity: 0;
+}
+
+.add-photo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: rgb(85, 85, 85);
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.add-photo:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(58, 58, 58);
+  background-color: rgb(194, 194, 194);
+}
+
+.login-text {
+  margin-bottom: 50px;
+  font-size: 20px;
 }/*# sourceMappingURL=admin.css.map */
