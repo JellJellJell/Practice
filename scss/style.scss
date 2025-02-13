@@ -478,11 +478,11 @@ textarea{
 .login{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: rem(15);
 }
 
 .login img{
-    width: 25px;
+    width: rem(25);
     transition: 0.5s;
     opacity: 0.5;
 }

@@ -9,7 +9,9 @@
             $user = $users -> fetch_assoc();
             $_SESSION['user'] = [
                 'id' => $user['id'],
+                'name' => $user['name'],
                 'login' => $user['login'],
+                'email' => $user['email'],
                 'pass' => $user['pass'],
                 'role' => $user['role']
             ];

@@ -1,0 +1,79 @@
+@use "sass:math";
+@import 'style.css';
+
+.profile{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile h1{
+    color: rgb(106, 106, 106);
+}
+
+.avatar{
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img{
+    border-radius: 100%;
+}
+
+.set-avatar{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.label-stat{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.label-stat img, .bgbtnsubmit{
+    width: 20px;
+    height: 20px;
+}
+
+.input-wrap{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.bgbtnsubmit{
+    background-image: url(../img/ok.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ff000000;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-wrap img, .input-wrap button{
+    opacity: 0.5;
+}
+
+.input-wrap img:hover, .input-wrap button:hover{
+    opacity: 1;
+    cursor: pointer;
+}

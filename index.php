@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 $style = "style.css";
 include 'header.php';
 ?>

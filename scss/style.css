@@ -444,11 +444,11 @@ textarea {
 .login {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
 .login img {
-  width: 25px;
+  width: 2.5rem;
   transition: 0.5s;
   opacity: 0.5;
 }
